@@ -34,7 +34,7 @@ public class DemoController {
     }
 
     @PostMapping("/save")
-    public void save(Demo demo) {
+    public void save(@RequestBody Demo demo) {
         demoService.save(demo);
     }
 
@@ -44,7 +44,7 @@ public class DemoController {
     }
 
     @PostMapping("/delete")
-    public void delete(Demo demo) {
+    public void delete(@RequestBody Demo demo) {
         demoService.delete(demo);
     }
 
